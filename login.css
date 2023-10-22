@@ -9,7 +9,39 @@ body {
     align-items: center;
     font-family: 'Baloo Bhai 2', sans-serif;
 }
-
+.nav {
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 1; */
+    background-color: white;
+    border-radius: 10px;
+    width: 100vw;
+}
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 10vw;
+}
+.nav-left-1 {
+    color: blue;
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 35px;
+}
+.nav-left-2 {
+    color: grey;
+    padding-left: 20px;
+    font-style: italic;
+}
+.nav-left-2 span {
+    color: orange;
+    font-style: italic;
+}
 #login {
     display: flex;
     justify-content: space-evenly;
@@ -19,14 +51,10 @@ body {
     flex-direction: column;
     color: chartreuse;
     border-radius: 10px;
-    /* border: 2px solid blue; */
+    border: 2px solid white;
     background: linear-gradient(135deg, red, blue, yellow, green);
     transition: all 0.5s ease-in-out;
-}
-#login:hover {
-    transform: scale(1.1);
-    background: linear-gradient(90deg, red, blue, yellow, green);
-    color: aqua;
+    box-shadow: 20px 20px 25px black;
 }
 #loginbutton {
     border-radius: 10px;
@@ -36,12 +64,6 @@ body {
     color: white;
     transition: all 0.5s ease-in-out;
     font-family: 'Baloo Bhai 2', sans-serif;
-
-}
-#loginbutton:hover {
-    background: linear-gradient(45deg, red, blueviolet);
-    transform: scale(1.1);
-    color: white;
     cursor: pointer;
 }
 #emailid {
@@ -54,5 +76,30 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 8.5vw;
+    gap: 8vw;
+}
+input {
+    border: none;
+    border-radius: 20px;
+    height: 4vh;
+    background-color: aquamarine;
+    color: blue;
+}
+#signup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#signup p {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+}
+#signup a {
+    text-decoration: none;
+    color: blue;
+    padding-right: 20px;
+}
+pre {
+    color: purple;
 }

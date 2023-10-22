@@ -20,18 +20,36 @@
         <link rel="stylesheet" href="login.css" />
     </head>
     <body>
+        <div id="nav">
+            <div class="nav-left">
+                <div class="nav-left-1">
+                    <p>Flipkart</p>
+                </div>
+                <div class="nav-left-2">
+                    Explore <span>Plus</span>
+                    <i class="fa-solid fa-plus fa-xl"></i>
+                </div>
+            </div>
+        </div>
         <form id="login">
             <h1>Login</h1>
             <div id="emailid">
                 <label for="email">Email : </label>
-                <input type="email" id="email" />
+                <input type="email" id="email" required />
             </div>
             <div id="passwordid">
                 <label for="password">Password : </label>
-                <input type="password" id="password" />
+                <input type="password" id="password" required />
             </div>
             <div>
                 <button id="loginbutton">Login</button>
+            </div>
+            <div id="signup">
+                <p>Don't have an account ?</p>
+                <pre>---------------------></pre>
+                <a href="/SignUp Page/signup.html" target="_blank"
+                    >Sign Up here</a
+                >
             </div>
         </form>
     </body>
